@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Docume</title>
-    <link rel="stylesheet" href="Income.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,26 +15,28 @@
     </nav>
 
     <header class="Page-Selector">
-        <a href="income.html">Income</a>
-        <a href="household.html">Household</a>
-        <a href="living.html">Living</a>
-        <a href="finance.html">Finance</a>
-        <a href="family.html">Family</a>
-        <a href="travel.html">Travel</a>
-        <a href="leisure.html">Leisure</a>
-        <a href="result.html">Result</a>
+        <a href="income.html" class="activePage">Income</a>
+        <a href="household.html" class="inactivePage">Household</a>
+        <a href="living.html" class="inactivePage">Living</a>
+        <a href="finance.html" class="inactivePage">Finance</a>
+        <a href="family.html" class="inactivePage">Family</a>
+        <a href="travel.html" class="inactivePage">Travel</a>
+        <a href="leisure.html" class="inactivePage">Leisure</a>
+        <a href="result.html" class="inactivePage">Result</a>
     </header>
-    <main>
+    <main id="incomeMain">
         <!-- Pie chart -->
         <section class="pie-chart">
-            <div id="Total-Annual-Income">
-                <h4>Annual Income</h4>
-                <p>$5716</p>
-            </div>
-
-            <div id="Total-Expenses">
-                <h4>Expenses</h4>
-                <p>$0</p>
+            <div id="analysisBoxes">
+                <div id="Total-Annual-Income">
+                    <h4>Annual Income</h4>
+                    <p>$5716</p>
+                </div>
+    
+                <div id="Total-Expenses">
+                    <h4>Expenses</h4>
+                    <p>$0</p>
+                </div>
             </div>
         </section>
 

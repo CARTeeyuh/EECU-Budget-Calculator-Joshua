@@ -1,3 +1,5 @@
+/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif ;
 }
+
+/*Nav Bar*/
+
 nav {
     display: flex;
     flex-direction: row;
@@ -26,13 +31,92 @@ nav h1 {
     color: white;
 }
 
-main {
+/*Page Selector*/
+
+.Page-Selector {
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.Page-Selector a {
+    text-decoration: none;
+    border-bottom: solid 2px;
+    width: 14%;
+    height: 30px;
+    align-content: center;
+    padding-left: 10px;
+}
+
+.activePage {
+    color: #000000; 
+}
+
+.inactivePage {
+    color: #767676;;
+}
+
+/*Piechart Section*/
+
+.pie-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    height: 605px;
+    border-top: #0A5BA8 11px solid;
+    box-shadow: 0px 4px 6.3px 2px rgba(0, 0, 0, 0.25);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 20px;
+}
+
+#analysisBoxes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#Total-Annual-Income, #Total-Expenses {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    height: 119px;
+    width: 50%;
+    justify-content: center;
+    padding: 10px;
+}
+
+#Total-Annual-Income h4 {
+    color: #757575;
+    
+}
+#Total-Annual-Income p {
+    color: #00D200;
+}
+
+#Total-Expenses h4 {
+    color: #757575;
+}
+
+#Total-Expenses p {
+    color: #d20000;
+}
+
+/*index.html*/
+
+#indexMain {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main img {
+#indexMain img {
     width: 100%;
     height: auto;
     margin-bottom: 3%;
@@ -71,9 +155,74 @@ main img {
 
 .image a:hover {
     opacity: 0.8;
-        animation: Big 0.3s forwards;
+    animation: Big 0.3s forwards;
 }
 
+/*income.html*/
+#incomeMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Incomes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    height: 605px;
+    border-top: #0A5BA8 11px solid;
+    box-shadow: 0px 4px 6.3px 2px rgba(0, 0, 0, 0.25);
+    padding-left: 20px;
+    padding-right: 20px;
+    & > p {
+        color: #767676;
+        margin-bottom: 10px;
+    }
+    & > h4 {
+        color: #656565;
+        font-weight: 600;
+    }
+}
+
+.Incomes h1 {
+    color: #000000;
+    padding-top: 20px;
+    font-size: x-large;
+}
+
+.Incomes input {
+    width: 100%;
+    height: 30px;
+    border: 2px 2px solid #D9D9D9;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.Incomes select {
+    width: 100%;
+    height: 30px;
+    border: 2px 2px solid #D9D9D9;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#nextStep {
+    display: block;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: auto;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #0A5BA8;
+    text-decoration: none;
+    align-content: center;
+}
+
+/*animations*/
 @keyframes Big {
     0% {
         transform: scale(1);
